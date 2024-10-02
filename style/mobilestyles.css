@@ -59,7 +59,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 30px;
+        width: 60px;
     }
 
     .flag2 {
@@ -120,5 +120,29 @@
     }
     .copycontract h3{
         font-size: 9px;
+    }
+    .tokenomics .transparent_cat {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 110px;
+    }
+    .copybutton {
+        margin: 5px;
+        border-radius: 5px;
+        font-weight: bolder;
+        border-style: ridge;
+        border-color: black;
+        color: rgb(255, 217, 0);
+        background-color: #000000;
+        cursor: pointer;
+        font-size: 15px;
+        padding-top: 0;
+    }
+    
+    .copybutton:hover {
+        border-color: black;
+        color: black;
+        background-color: white;
     }
 }
