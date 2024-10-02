@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'CustomFont';
+    /* Name of the font */
+    src: url('../fonts/fonnts.com-Montserrat_Italic.ttf') format('truetype');
+    /* Path to your TTF file */
+
+    font-weight: normal;
+    /* Define the font weight (normal, bold, etc.) */
+    font-style: normal;
+    /* Define the font style (normal, italic, etc.) */
+}
+
+@font-face {
+    font-family: 'CustomFont2';
+    /* Name of the font */
+    src: url('../fonts/fonnts.com-Montserrat-Bold.ttf') format('truetype');
+    /* Path to your TTF file */
+    font-weight: normal;
+    /* Define the font weight (normal, bold, etc.) */
+    font-style: normal;
+    /* Define the font style (normal, italic, etc.) */
+}
+
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    /* Fallback font if custom font fails to load */
+    background-color: #FBF8BE;
+    background-image: url("../images/backgroundimage.png");
+    background-size: auto;
+    z-index: 1;
+    margin: 0;
+    padding: 0px;
+}
+
+header {
+    font-family: 'CustomFont', sans-serif;
+    /* Fallback font if custom font fails to load */
+    margin-top: 0%;
+    background-color: #234E70;
+    color: white;
+    padding: 1px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.visible {
+    color: red;
+}
+
+.container {
+    position: relative;
+    /* Keep this relative */
+    margin-top: 1%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_logo {
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    /* Change to relative */
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border-color: #234E70;
+    border-width: 10px;
+    border-style: solid;
+    opacity: 0;
+    /* Start invisible */
+    animation: growAndMove 2s forwards;
+    /* Duration and animation type */
+}
+
+@keyframes growAndMove {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 350px;
+        /* Final width */
+        height: 350px;
+        /* Final height */
+        opacity: 1;
+    }
+}
+
+.tokenomics .transparent_cat {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 220px;
+}
+
+.tokenomics-box .emoji {
+    font-size: 60px;
+}
+
+.tokenomics-box p {
+    font-size: 20px;
+}
+
+.socials {
+    margin-top: 0.25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: #234E70;
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: aliceblue;
+    animation: slideUp 2s forwards;
+    /* Animation */
+    opacity: 0;
+    /* Start invisible */
+    align-items: center;
+    display: flex;
+    /* Enable Flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    width: 20%;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.twitterpost {
+    margin-top: 2%;
+    margin-right: 20%;
+    width: 500px;
+    margin-left: auto;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        /* Start below the viewport */
+        opacity: 0;
+        /* Invisible */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* End at its position */
+        opacity: 1;
+        /* Fully visible */
+    }
+}
+
+
+.tokenomics-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tokenomics-box {
+    background-color: #234f70;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    /* Fixed width for each box */
+    transition: transform 0.3s;
+    color: white;
+}
+
+.tokenomics-box:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tokenomics {
+    position: relative;
+    margin-top: 2%;
+    width: fit-content;
+    border-style: solid;
+    border-color: #234E70;
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+}
+
+.flag1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 171px;
+}
+
+.flag2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 171px;
+    transform: scaleX(-1);
+}
+
+.swap {
+    width: 60%;
+    margin-top: 2%;
+    display: block;
+    border-style: solid;
+    border-color: #234E70;
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+}
+
+.about {
+    text-align: center;
+    font-family: 'CustomFont2', sans-serif;
+    /* Fallback font if custom font fails to load */
+    width: 63%;
+    background-color: aliceblue;
+    color: black;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #234E70;
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.socials_mobile {
+    display: none;
+}
+
+.copycontract {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-style: solid;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 1%;
+    border-style: solid;
+    border-color: #234E70;
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 10px;
+
+    background-color: rgb(255, 255, 255);
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d2b6f4", endColorstr="#ffffff", GradientType=1);
+
+}
+
+
+.copybutton {
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    border-style: ridge;
+    border-color: black;
+    color: rgb(255, 217, 0);
+    background-color: #000000;
+    cursor: pointer;
+    font-size: 30px;
+    padding-top: 0;
+}
+
+.copybutton:hover {
+    border-color: black;
+    color: black;
+    background-color: white;
+}

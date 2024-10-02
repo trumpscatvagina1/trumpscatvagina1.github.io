@@ -1,0 +1,121 @@
+@media (max-width: 1000px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #FBF8BE;
+        margin: 0;
+        padding: 0px;
+    }
+
+    header {
+        background-color: #234E70;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .container {
+        display: block;
+        width: 320px;
+        height: auto;
+    }
+
+    .twitterpost {
+        margin-top: 2%;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main_logo {
+        margin-left: auto;
+    }
+
+    @keyframes growAndMove {
+        0% {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+
+        100% {
+            width: 300px;
+            /* Final width */
+            height: 300px;
+            /* Final height */
+            opacity: 1;
+        }
+    }
+
+    .socials {
+        margin-top: 5%;
+    }
+
+    .flag1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+    }
+
+    .flag2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        transform: scaleX(-1);
+    }
+
+    .about {
+        width: 85%;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .socials_mobile {
+        margin-top: 2%;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-color: #234E70;
+        border-width: 5px;
+        border-radius: 15px;
+        padding: 5px;
+        background-color: aliceblue;
+        animation: slideUp 2s forwards;
+        /* Animation */
+        opacity: 0;
+        /* Start invisible */
+        align-items: center;
+        display: flex;
+        /* Enable Flexbox */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        width: 85%;
+    }
+
+    .socials_mobile a {
+        text-decoration: none;
+    }
+
+    .socials a {
+        text-decoration: none;
+    }
+
+    .tokenomics {
+        width: 85%;
+    }
+
+    .swap {
+        width: 85%;
+    }
+}
