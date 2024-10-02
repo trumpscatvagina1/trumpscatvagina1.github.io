@@ -118,4 +118,7 @@
     .swap {
         width: 85%;
     }
+    .copycontract h3{
+        font-size: 9px;
+    }
 }
