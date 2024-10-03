@@ -7,7 +7,7 @@
     }
 
     header {
-        background-color: #234E70;
+        background-color: #000000;
         color: white;
         padding: 10px 0;
         text-align: center;
@@ -34,7 +34,14 @@
     .main_logo {
         margin-left: auto;
     }
-
+    .flag_new {
+        display: none;
+    }
+    
+    
+    .flag_new2 {
+        display: none;
+    }
     @keyframes growAndMove {
         0% {
             width: 0;
@@ -84,7 +91,7 @@
         margin-left: auto;
         margin-right: auto;
         border-style: solid;
-        border-color: #234E70;
+        border-color: #DB292C;
         border-width: 5px;
         border-radius: 15px;
         padding: 5px;
@@ -123,7 +130,13 @@
     }
     .tokenomics .transparent_cat {
         position: absolute;
-        top: 0px;
+        top: 50px;
+        right: 0;
+        width: 110px;
+    }
+    .tokenomics .transparent_cat2 {
+        position: absolute;
+        top: 50px;
         right: 0;
         width: 110px;
     }

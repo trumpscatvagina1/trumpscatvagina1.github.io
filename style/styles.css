@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'CustomFont';
     /* Name of the font */
-    src: url('../fonts/fonnts.com-Montserrat_Italic.ttf') format('truetype');
+    src: url('../fonts/TT\ Octosquares\ Trial\ Compressed\ DemiBold.ttf') format('truetype');
     /* Path to your TTF file */
 
     font-weight: normal;
@@ -13,7 +13,7 @@
 @font-face {
     font-family: 'CustomFont2';
     /* Name of the font */
-    src: url('../fonts/fonnts.com-Montserrat-Bold.ttf') format('truetype');
+    src: url('../fonts/TT\ Octosquares\ Trial\ Compressed\ DemiBold.ttf') format('truetype');
     /* Path to your TTF file */
     font-weight: normal;
     /* Define the font weight (normal, bold, etc.) */
@@ -25,8 +25,7 @@
 body {
     font-family: 'CustomFont', sans-serif;
     /* Fallback font if custom font fails to load */
-    background-color: #FBF8BE;
-    background-image: url("../images/backgroundimage.png");
+    background-image: linear-gradient(to top, #DB292C, #75041a, #500c1b, #2b0d14, #000000);
     background-size: auto;
     z-index: 1;
     margin: 0;
@@ -37,16 +36,19 @@ header {
     font-family: 'CustomFont', sans-serif;
     /* Fallback font if custom font fails to load */
     margin-top: 0%;
-    background-color: #234E70;
+    background-color: #000000;
     color: white;
     padding: 1px 0;
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
+}
+footer p{
+    margin: 0px;
 }
 
 
@@ -74,7 +76,7 @@ footer {
     width: 0;
     height: 0;
     border-radius: 50%;
-    border-color: #234E70;
+    border-color: #ffffff;
     border-width: 10px;
     border-style: solid;
     opacity: 0;
@@ -101,9 +103,19 @@ footer {
 
 .tokenomics .transparent_cat {
     position: absolute;
-    top: 0px;
+    top: 50px;
     right: 0;
     width: 220px;
+    z-index: 1000;
+}
+
+.tokenomics .transparent_cat2 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 220px;
+    transform: scaleX(-1);
+    z-index: 1000;
 }
 
 .tokenomics-box .emoji {
@@ -123,7 +135,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
-    border-color: #234E70;
+    border-color: #DB292C;
     border-width: 5px;
     border-radius: 15px;
     padding: 5px;
@@ -178,9 +190,13 @@ footer {
     margin: 0 auto;
 }
 
+.audit {
+    margin-bottom: 0%;
+}
+
 .tokenomics-box {
-    background-color: #234f70;
-    border: 1px solid #ddd;
+    background-color: #DB292C;
+    border: 3px solid #dfdfdf;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -206,7 +222,7 @@ h1 {
     margin-top: 2%;
     width: fit-content;
     border-style: solid;
-    border-color: #234E70;
+    border-color: #DB292C;
     border-width: 5px;
     border-radius: 15px;
     padding: 5px;
@@ -215,11 +231,27 @@ h1 {
     background-color: aliceblue;
 }
 
-.flag1 {
+.tokenomics h1 {
+    margin-top: 0%;
+    font-size: 50px;
+}
+
+.flag1 {}
+
+.flag_new {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 171px;
+    top: 500px;
+    left: 220px;
+    width: 300px;
+}
+
+
+.flag_new2 {
+    position: absolute;
+    top: 500px;
+    right: 220px;
+    width: 300px;
+    transform: scaleX(-1);
 }
 
 .flag2 {
@@ -235,7 +267,7 @@ h1 {
     margin-top: 2%;
     display: block;
     border-style: solid;
-    border-color: #234E70;
+    border-color: #DB292C;
     border-width: 5px;
     border-radius: 15px;
     padding: 10px;
@@ -244,16 +276,21 @@ h1 {
     background-color: aliceblue;
 }
 
+.swap h1 {
+    margin-top: 0%;
+    font-size: 45px;
+}
+
 .about {
     text-align: center;
     font-family: 'CustomFont2', sans-serif;
     /* Fallback font if custom font fails to load */
-    width: 63%;
+    width: 59%;
     background-color: aliceblue;
     color: black;
     font-size: 20px;
     border-style: solid;
-    border-color: #234E70;
+    border-color: #DB292C;
     border-width: 5px;
     border-radius: 15px;
     padding: 10px;
@@ -275,10 +312,10 @@ h1 {
     border-radius: 20px;
     margin-top: 1%;
     border-style: solid;
-    border-color: #234E70;
+    border-color: #DB292C;
     border-width: 5px;
     border-radius: 15px;
-    padding: 10px;
+    padding: 5px;
 
     background-color: rgb(255, 255, 255);
 
@@ -286,14 +323,54 @@ h1 {
 
 }
 
-
-.copybutton {
+.copybuttonsniffer {
+    font-family: 'CustomFont2', sans-serif;
     margin: 5px;
     border-radius: 10px;
     font-weight: bolder;
     border-style: ridge;
     border-color: black;
-    color: rgb(255, 217, 0);
+    color: rgb(0, 255, 38);
+    background-color: #000000;
+    cursor: pointer;
+    font-size: 30px;
+    padding-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copybuttontop {
+    font-family: 'CustomFont2', sans-serif;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    border-style: ridge;
+    border-color: black;
+    color: rgb(0, 255, 38);
+    background-color: #000000;
+    cursor: pointer;
+    font-size: 30px;
+    padding-top: 0;
+    display: block;
+    position: absolute;
+}
+
+
+.copybuttontop:hover {
+    border-color: black;
+    color: black;
+    background-color: white;
+}
+
+.copybutton {
+    font-family: 'CustomFont2', sans-serif;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    border-style: ridge;
+    border-color: black;
+    color: rgb(0, 255, 38);
     background-color: #000000;
     cursor: pointer;
     font-size: 30px;
@@ -304,4 +381,44 @@ h1 {
     border-color: black;
     color: black;
     background-color: white;
+}
+
+
+/* Container to hold the sliding text */
+.slide-container {
+    position: relative;
+    background-color: #DB292C;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+/* Text to slide in a cyclic manner */
+.slide-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 15s linear infinite;
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* Keyframes to move text in a loop */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Duplicating the text for seamless effect */
+.slide-container .inner {
+    display: flex;
 }
